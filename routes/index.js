@@ -3,15 +3,25 @@
  * GET home page.
  */
 
-var date1 = DateString(new Date()) + ' (ISO: ' + ISODateString(new Date()) + ')';
+var time = require('time');
+
+//var date1 = DateString(new Date()) + ' (ISO: ' + ISODateString(new Date()) + ')';
+var date1 = new time.Date();
+date1.setTimezone('Japan/Tokyo');
+date1 = DateString(date1) + ' (ISO: ' + ISODateString(date1) + ')';
 
 exports.date1 = date1;
 
 exports.index = function(req, res){
+  //var date2 = DateString(new Date()) + ' (ISO: ' + ISODateString(new Date()) + ')';
+  var date2 = new time.Date();
+  date2.setTimezone('Japan/Tokyo');
+  date2 = DateString(date2) + ' (ISO: ' + ISODateString(date2) + ')';
+
   res.render('index', {
     title: 'Node Express Hello World 1',
     date1: date1,
-    date2: DateString(new Date()) + ' (ISO: ' + ISODateString(new Date()) + ')'
+    date2: date2
   });
 };
 
