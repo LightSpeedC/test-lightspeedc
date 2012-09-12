@@ -7,7 +7,7 @@ var time = require('time');
 
 //var date1 = DateString(new Date()) + ' (ISO: ' + ISODateString(new Date()) + ')';
 var date1 = new time.Date();
-date1.setTimezone('Japan/Tokyo');
+date1.setTimezone('Asia/Tokyo');
 date1 = DateString(date1) + ' (ISO: ' + ISODateString(date1) + ')';
 
 exports.date1 = date1;
@@ -15,7 +15,7 @@ exports.date1 = date1;
 exports.index = function(req, res){
   //var date2 = DateString(new Date()) + ' (ISO: ' + ISODateString(new Date()) + ')';
   var date2 = new time.Date();
-  date2.setTimezone('Japan/Tokyo');
+  date2.setTimezone('Asia/Tokyo');
   date2 = DateString(date2) + ' (ISO: ' + ISODateString(date2) + ')';
 
   res.render('index', {
