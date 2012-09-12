@@ -3,6 +3,8 @@
  * GET home page.
  */
 
+var util = require('util');
+
 if (process.platform != 'win32')
   var time = require('time');
 
@@ -30,7 +32,8 @@ exports.index = function(req, res){
   res.render('index', {
     title: 'Node Express Hello World 1',
     date1: date1,
-    date2: date2
+    date2: date2,
+    str: util.inspect(process, true, 2, false).toString()
   });
 };
 
