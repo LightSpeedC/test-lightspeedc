@@ -27,3 +27,6 @@ Heroku needs:
 
     Procfile
     package.json
+
+http://test-lightspeedc.herokuapp.com/
+
