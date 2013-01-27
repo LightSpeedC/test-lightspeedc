@@ -28,5 +28,11 @@ Heroku needs:
     Procfile
     package.json
 
+Node Ninja needs:
+
+    config.json
+    package.json
+
 http://test-lightspeedc.herokuapp.com/
+http://test-lightspeedc.c.node-ninja.com/
 
