@@ -5,10 +5,10 @@
 
 var util = require('util');
 
-if (process.platform != 'win32')
+if (process.platform !== 'win32')
   var time = require('time');
 
-if (process.platform == 'win32') {
+if (process.platform === 'win32') {
   var date1 = DateString(new Date()) + ' (ISO: ' + ISODateString(new Date()) + ')';
 }
 else {
