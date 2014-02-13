@@ -36,3 +36,12 @@ Node Ninja needs:
 http://test-lightspeedc.herokuapp.com/
 http://test-lightspeedc.c.node-ninja.com/
 
+
+## memo
+
+    heroku ceate APP
+    git remote add heroku git@heroku.com:APP.git
+    heroku git:remote --app APP
+    heroku config:add TZ=Asia/Tokyo
+    git config --global http.proxy http://server:port
+    git push heroku master
