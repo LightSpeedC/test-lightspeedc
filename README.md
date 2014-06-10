@@ -39,7 +39,7 @@ http://test-lightspeedc.c.node-ninja.com/
 
 ## memo
 
-    heroku ceate APP
+    heroku create APP
     git remote add heroku git@heroku.com:APP.git
     heroku git:remote --app APP
     heroku config:add TZ=Asia/Tokyo
