@@ -34,7 +34,6 @@ Node Ninja needs:
     package.json
 
 http://test-lightspeedc.herokuapp.com/
-http://test-lightspeedc.c.node-ninja.com/
 
 
 ## memo
